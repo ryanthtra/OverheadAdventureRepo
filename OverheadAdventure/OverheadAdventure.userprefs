@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Code/Scripts/Entity/Player.cs">
+    <Files>
+      <File FileName="../beatemup/proj/Assets/Characters/Players/PlayerController.cs" Line="34" Column="48" />
+      <File FileName="Assets/Code/Classes/EntityController/PlayerController.cs" Line="5" Column="2" />
+      <File FileName="Assets/Code/Classes/EntityController/EntityController.cs" Line="24" Column="65" />
+      <File FileName="Assets/Code/Classes/EntityMotor/EntityMotor.cs" Line="45" Column="63" />
+      <File FileName="Assets/Code/Scripts/Entity/Entity.cs" Line="13" Column="32" />
+      <File FileName="Assets/Code/Scripts/Entity/Player.cs" Line="5" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
