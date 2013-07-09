@@ -3,19 +3,20 @@ using System.Collections;
 
 public class Entity : MonoBehaviour 
 {
+	#region ENTITY_COMPONENTS
 	protected EntityController m_controller;
 	protected EntityMotor m_motor;
-	
-	public float m_speed = 1f;
+	#endregion
 	
 	protected CharacterController m_body;
 	
-	public Camera viewport_camera;
+	public float m_speed = 1f;
 	
 	#region PROPERTIES
 	public EntityController controller	{ get{ return m_controller; } }
 	public EntityMotor motor			{ get{ return m_motor; } }
-	public CharacterController body 	{ get{ return m_body; } }
+	
+	public CharacterController body		{ get{ return m_body; } }
 	public float speed					{ get{ return m_speed; } }
 	#endregion
 	

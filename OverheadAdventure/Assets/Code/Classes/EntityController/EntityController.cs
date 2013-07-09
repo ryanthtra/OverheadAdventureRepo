@@ -9,6 +9,7 @@ public class EntityController
 	protected bool m_move_south = 		false;
 	protected bool m_move_east =		false;
 	protected bool m_move_west =		false;
+	protected bool m_move_direction =	false;
 	
 	protected float m_horiz_movement =	0f;
 	protected float m_vert_movement =	0f;
@@ -19,6 +20,7 @@ public class EntityController
 	public bool moveSouth	{ get{ return m_move_south; } }
 	public bool moveEast	{ get{ return m_move_east; } }
 	public bool moveWest	{ get{ return m_move_west; } }
+	public bool moveDirection { get{ return m_move_direction; } }
 	public float horizMovement { get{ return m_horiz_movement; } }
 	public float vertMovement { get{ return m_vert_movement; } }
 	public Vector3 lookAtVector { get{ return m_look_at_vector; } }
@@ -43,6 +45,7 @@ public class EntityController
 		m_move_south = testSouth();
 		m_move_east = testEast();
 		m_move_west = testWest();
+		m_move_direction = testDirection();
 	}
 	
 	protected virtual bool testNorth()
@@ -61,6 +64,11 @@ public class EntityController
 	}
 	
 	protected virtual bool testWest()
+	{
+		return false;
+	}
+	
+	protected virtual bool testDirection()
 	{
 		return false;
 	}

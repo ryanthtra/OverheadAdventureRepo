@@ -3,10 +3,13 @@ using System.Collections;
 
 public class PlayerController : EntityController 
 {
+	Player m_owner;
+	
 	#region CONSTRUCTORS
-	public PlayerController(Entity owner) :
+	public PlayerController(Player owner) :
 		base(owner)
 	{
+		this.m_owner = owner;
 	}
 	#endregion
 	

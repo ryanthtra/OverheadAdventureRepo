@@ -3,6 +3,9 @@ using System.Collections;
 
 public class Player : Entity 
 {
+	// Camera is needed for the ability to use mouse positioning as input.
+	public Camera viewport_camera;
+	
 	// Use this for initialization
 	protected override void Start () 
 	{
