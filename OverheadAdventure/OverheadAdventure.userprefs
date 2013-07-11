@@ -1,6 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Code/Classes/EntityMotor/EntityMotor.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Code/Scripts/Room/Room.cs">
     <Files>
       <File FileName="../../beatemup/proj/Assets/Characters/Players/PlayerController.cs" Line="34" Column="48" />
       <File FileName="Assets/Code/Classes/EntityController/PlayerController.cs" Line="1" Column="1" />
@@ -9,8 +9,8 @@
       <File FileName="Assets/Code/Scripts/Entity/Entity.cs" Line="1" Column="1" />
       <File FileName="Assets/Code/Scripts/Entity/Player.cs" Line="1" Column="1" />
       <File FileName="Assets/Code/Scripts/Entity/ECamera/ECameraSPlayer.cs" Line="1" Column="1" />
-      <File FileName="Assets/Code/Classes/EntityMotor/ECameraSPlayerMotor.cs" Line="1" Column="1" />
-      <File FileName="Assets/Code/Scripts/Room/Room.cs" Line="57" Column="21" />
+      <File FileName="Assets/Code/Classes/EntityMotor/ECameraSPlayerMotor.cs" Line="38" Column="30" />
+      <File FileName="Assets/Code/Scripts/Room/Room.cs" Line="92" Column="66" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
