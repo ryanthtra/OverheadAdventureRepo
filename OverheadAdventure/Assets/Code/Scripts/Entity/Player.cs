@@ -13,7 +13,7 @@ public class Player : Entity
 		m_motor = new EntityMotor(this);
 		m_body = GetComponent<CharacterController>();
 		
-		m_speed = 5f;
+		m_speed = 10f;
 	}
 	
 	// Update is called once per frame
