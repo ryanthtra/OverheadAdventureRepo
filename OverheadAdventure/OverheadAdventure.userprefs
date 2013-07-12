@@ -9,8 +9,8 @@
       <File FileName="Assets/Code/Scripts/Entity/Entity.cs" Line="1" Column="1" />
       <File FileName="Assets/Code/Scripts/Entity/Player.cs" Line="1" Column="1" />
       <File FileName="Assets/Code/Scripts/Entity/ECamera/ECameraSPlayer.cs" Line="1" Column="1" />
-      <File FileName="Assets/Code/Classes/EntityMotor/ECameraSPlayerMotor.cs" Line="38" Column="30" />
-      <File FileName="Assets/Code/Scripts/Room/Room.cs" Line="92" Column="66" />
+      <File FileName="Assets/Code/Classes/EntityMotor/ECameraSPlayerMotor.cs" Line="1" Column="1" />
+      <File FileName="Assets/Code/Scripts/Room/Room.cs" Line="81" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
