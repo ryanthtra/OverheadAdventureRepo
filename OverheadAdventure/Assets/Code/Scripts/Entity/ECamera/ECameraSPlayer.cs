@@ -12,12 +12,17 @@ public class ECameraSPlayer : ECamera {
 		
 	// Use this for initialization
 	protected override void Start () {
+		Debug.Log("Finding player...");
 		m_player = GameObject.FindGameObjectWithTag("Player");
-		m_current_room = GameObject.FindGameObjectWithTag("CurrentRoom");
-		m_motor = new ECameraSPlayerMotor(this);
+		Debug.Log ("m_player = " + m_player);
 		
-		Debug.Log ("m_motor = " + m_motor);
+		Debug.Log("Finding current room...");
+		m_current_room = GameObject.FindGameObjectWithTag("CurrentRoom");
 		Debug.Log ("m_current_room = " + m_current_room);
+		
+		Debug.Log("Getting camera motor...");
+		m_motor = new ECameraSPlayerMotor(this);
+		Debug.Log("m_motor = " + m_motor);
 	}
 	
 	// Update is called once per frame

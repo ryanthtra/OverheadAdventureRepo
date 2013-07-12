@@ -3,14 +3,14 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Code/Scripts/Room/Room.cs">
     <Files>
       <File FileName="../../beatemup/proj/Assets/Characters/Players/PlayerController.cs" Line="34" Column="48" />
-      <File FileName="Assets/Code/Classes/EntityController/PlayerController.cs" Line="1" Column="1" />
       <File FileName="Assets/Code/Classes/EntityController/EntityController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Code/Classes/EntityController/PlayerController.cs" Line="1" Column="1" />
       <File FileName="Assets/Code/Classes/EntityMotor/EntityMotor.cs" Line="1" Column="1" />
       <File FileName="Assets/Code/Scripts/Entity/Entity.cs" Line="1" Column="1" />
       <File FileName="Assets/Code/Scripts/Entity/Player.cs" Line="1" Column="1" />
-      <File FileName="Assets/Code/Scripts/Entity/ECamera/ECameraSPlayer.cs" Line="1" Column="1" />
-      <File FileName="Assets/Code/Classes/EntityMotor/ECameraSPlayerMotor.cs" Line="1" Column="1" />
-      <File FileName="Assets/Code/Scripts/Room/Room.cs" Line="81" Column="30" />
+      <File FileName="Assets/Code/Scripts/Entity/ECamera/ECameraSPlayer.cs" Line="30" Column="1" />
+      <File FileName="Assets/Code/Classes/EntityMotor/ECameraSPlayerMotor.cs" Line="61" Column="31" />
+      <File FileName="Assets/Code/Scripts/Room/Room.cs" Line="49" Column="63" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -16,6 +16,8 @@ public class Room : MonoBehaviour
 	Transform m_floor;
 	Transform m_door;
 	
+	private bool m_room_generated = false;
+	
 	private enum WhichWall
 	{
 		NORTH = 0,
@@ -23,7 +25,7 @@ public class Room : MonoBehaviour
 		EAST,
 		WEST,
 		SIZE
-	}
+	};
 	
 	WhichWall m_doorwall;
 	
@@ -40,9 +42,12 @@ public class Room : MonoBehaviour
 		WEST_BACK,
 		WEST_FRONT,
 		SIZE
-	}
+	};
 	
+	#region PROPERTIES
 	public Vector3 RoomDimensions { get{ return m_floor.localScale; } }
+	public bool RoomGenerated { get{ return m_room_generated; } }
+	#endregion
 	
 	// Use this for initialization
 	void Start () 
@@ -58,14 +63,16 @@ public class Room : MonoBehaviour
 	
 	void GenerateRoom()
 	{
+		Debug.Log("Generating random room dimensions...");
 		GenerateFloor();
 		GenerateDoor();
 		GenerateWalls();
+		Debug.Log("Room generation DONE!");
+		m_room_generated = true;
 	}
 	
 	void GenerateFloor()
 	{
-		Debug.Log ("Generating Floor...");
 		int width = Random.Range(ROOM_MIN_WIDTHDEPTH, ROOM_MAX_WIDTHDEPTH + 1);
 		int depth = Random.Range(ROOM_MIN_WIDTHDEPTH, ROOM_MAX_WIDTHDEPTH + 1);
 		
@@ -78,8 +85,8 @@ public class Room : MonoBehaviour
 		m_door = transform.Find("Door");
 		
 		// Randomly determine which wall the door will be on.
-		m_doorwall = WhichWall.WEST;
-//		m_doorwall = (WhichWall) Random.Range((int)WhichWall.NORTH, (int)WhichWall.SIZE);
+//		m_doorwall = WhichWall.WEST;
+		m_doorwall = (WhichWall) Random.Range((int)WhichWall.NORTH, (int)WhichWall.SIZE);
 		
 		// Variables to determine the door's local position.
 		float x_location = 0f;
