@@ -13,18 +13,18 @@ Software Engineering goals:
 
 
 Basic controls when in game mode:
-WASD - Movement
-Use mouse to aim (set forward vector)
+- WASD - Movement
+- Use mouse to aim (set forward vector)
 
 
 Barebones milestone goals to be reached (roughly in this order):
-Player Input and Movement
-Camera Movement and Behavior
-Empty Room Random Generation (Dimensions, Door Location)
-Empty Room Random Generation with Tiles
-Generating Multiple Randomly-Generated Rooms
-Room Transitioning (Moving to the next room through the door)
-AI Input and Movement
+- Player Input and Movement
+- Camera Movement and Behavior
+- Empty Room Random Generation (Dimensions, Door Location)
+- Empty Room Random Generation with Tiles
+- Generating Multiple Randomly-Generated Rooms
+- Room Transitioning (Moving to the next room through the door)
+- AI Input and Movement
 
 
 Refinement milestone goals TBD.
