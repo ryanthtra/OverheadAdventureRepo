@@ -3,6 +3,10 @@ using System.Collections;
 
 public class Room : MonoBehaviour 
 {
+	public GameObject floorTileTemplate;
+	
+	GameObject[] m_tiles;
+	
 	public const int WALL_THICKNESS = 1;
 	private const int WALL_HEIGHT = 6;
 	
@@ -11,7 +15,10 @@ public class Room : MonoBehaviour
 	private const int DOOR_HEIGHT = 6;
 	
 	private const int ROOM_MIN_WIDTHDEPTH = 15;
-	private const int ROOM_MAX_WIDTHDEPTH = 80;
+	private const int ROOM_MAX_WIDTHDEPTH = 65;
+	
+	private const int TILE_WIDTH = 1;
+	private const int TILE_DEPTH = 1;
 		
 	Transform m_floor;
 	Transform m_door;
@@ -78,6 +85,35 @@ public class Room : MonoBehaviour
 		
 		m_floor = transform.Find("Floor");
 		m_floor.localScale = new Vector3((float)width, (float)FLOOR_THICKNESS, (float)depth);
+		
+		SetTiles();
+	}
+	
+	void SetTiles()
+	{
+		int floor_width = (int)m_floor.localScale.x;
+		int floor_depth = (int)m_floor.localScale.z;
+		System.Array.Resize<GameObject>(ref m_tiles, floor_width * floor_depth);
+		
+		// Offset values for tiles' local position
+		// (Here, the origin (0,0) is the front left, but actual origin is center.
+		// Same with the tile's local origin, as well.
+		float offset_x = -(floor_width + TILE_WIDTH) / 2f;
+		float offset_z = -(floor_depth + TILE_DEPTH) / 2f;
+		
+		for (int z = 0; z < floor_depth; z++)
+		{
+			for (int x = 0; x < floor_width; x++)
+			{
+				GameObject current_tile = m_tiles[(z*floor_width) + x];
+				current_tile = (GameObject)Instantiate((Object)floorTileTemplate);
+				current_tile.transform.parent = transform;
+				current_tile.transform.localPosition = new Vector3(
+					((x+1) * (float)TILE_WIDTH) + offset_x,
+					0f,
+					((z+1) * (float)TILE_DEPTH) + offset_z);
+			}
+		}
 	}
 	
 	void GenerateDoor()
